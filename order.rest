@@ -1,0 +1,40 @@
+@base_url = http://localhost:8200/api/order
+
+GET {{base_url}}
+
+###
+
+POST {{base_url}}/checkout
+Content-Type: application/json
+
+{
+  "order": {
+    "name": "Ken",
+    "line1": "Jalan 1",
+    "city": "KL",
+    "state": "WP",
+    "zip": "34000",
+    "country": "MY",
+    "giftWrap": true
+  },
+  "lines": [
+    {
+      "product": {
+        "productID": 2,
+        "name": "Kayak",
+        "description": "A boat for one person",
+        "price": 275,
+        "category": "Watersports"
+      },
+      "quantity": 10
+    },
+    {
+      "product": {
+        "productID": 3
+      },
+      "quantity": 11
+    }
+  ]
+}
+
+###

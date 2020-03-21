@@ -1,0 +1,10 @@
+-- run
+gradle bootRun
+mvn spring-boot:run
+
+-- build
+gradle build
+mvn clean package
+
+java -jar build/libs/my-app-service-0.1.0.jar
+java -jar target/my-app-service-0.1.0.jar
