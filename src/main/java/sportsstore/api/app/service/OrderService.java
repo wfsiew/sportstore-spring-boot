@@ -22,7 +22,7 @@ public class OrderService {
     public void save(Order order) {
         for (CartLine c : order.getLines()) {
             c.setOrder(order);
-            cartLineRepository.saveAndFlush(c);
+            cartLineRepository.save(c);
         }
 
         orderRepository.saveAndFlush(order);

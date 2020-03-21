@@ -6,5 +6,5 @@ mvn spring-boot:run
 gradle build
 mvn clean package
 
-java -jar build/libs/my-app-service-0.1.0.jar
+java -jar target/sportsstore-0.0.1-SNAPSHOT.jar
 java -jar target/my-app-service-0.1.0.jar
